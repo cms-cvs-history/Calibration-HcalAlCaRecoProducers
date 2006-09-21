@@ -1,0 +1,7 @@
+
+  #------------------------------------------------
+  #AlCaReco filtering for HCAL minbias:
+  #------------------------------------------------
+  include "Calibration/HcalAlCaRecoProducers/data/alcaminbias.cfi"
+
+  sequence alcastreamHcalMinbias = {MinProd}

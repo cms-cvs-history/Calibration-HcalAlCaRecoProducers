@@ -1,0 +1,5 @@
+# producer for alcaisotrk (HCAL isolated tracks)
+
+  module IsoProd = AlCaIsoTracksProducer {
+    untracked string inputTrackLabel = 'ctfWithMaterialTracks'
+}

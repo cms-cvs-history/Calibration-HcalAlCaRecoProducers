@@ -1,0 +1,8 @@
+# producer for alcadijets (HCAL di-jets)
+
+  module DiJProd = AlCaDiJetsProducer {
+    string src = 'iterativeCone5CaloJets'
+//    string src = 'ktCaloJets'
+//    string src = 'midPointCone5CaloJets'
+//    string src = 'midPointCone7CaloJets'
+}

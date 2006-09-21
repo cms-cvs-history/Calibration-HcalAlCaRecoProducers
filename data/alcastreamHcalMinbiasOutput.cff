@@ -1,0 +1,14 @@
+# output block for alcastream HCAL Min Bias
+
+  # output module 
+  module alcastreamHcalMinbiasOutput = PoolOutputModule
+    untracked vstring outputCommands =
+    {
+      "drop *",
+      "keep HBHERecHitsSorted_*_*_*",
+      "keep HORecHitsSorted_*_*_*",
+      "keep HFRecHitsSorted_*_*_*"
+    }
+  } 
+
+ 

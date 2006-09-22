@@ -1,7 +1,9 @@
 # output block for alcastream HCAL Min Bias
 
   # output module 
-  module alcastreamHcalMinbiasOutput = PoolOutputModule
+#  module alcastreamHcalMinbiasOutput = PoolOutputModule
+  block alcastreamHcalMinbiasOutput =
+  {
     untracked vstring outputCommands =
     {
       "drop *",
@@ -9,6 +11,12 @@
       "keep HORecHitsSorted_*_*_*",
       "keep HFRecHitsSorted_*_*_*"
     }
+
+# use this to filter
+#    untracked PSet SelectEvents = {
+#      vstring SelectEvents = { "alcastreamHcalMinbias" }
+#    }
+
   } 
 
  

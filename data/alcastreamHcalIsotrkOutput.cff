@@ -1,7 +1,8 @@
 # output block for alcastream HCAL Isotrk
 
   # output module 
-  module alcastreamHcalIsotrkOutput = PoolOutputModule
+#  module alcastreamHcalIsotrkOutput = PoolOutputModule
+  block alcastreamHcalIsotrkOutput =
   {
     untracked vstring outputCommands =
     {
@@ -12,4 +13,10 @@
 //      "keep HBHERecHitsSorted_*_*_*",
 //      "keep HORecHitsSorted_*_*_*"
     }
-  }	
+
+# use this in case of filter available
+#    untracked PSet SelectEvents = {
+#      vstring SelectEvents = { "alcastreamHcalIsotrk" }
+#    }
+
+ }

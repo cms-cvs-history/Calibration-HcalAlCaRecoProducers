@@ -4,4 +4,5 @@
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcaminbias.cfi"
 
-  sequence alcastreamHcalMinbias = {MinProd}
+#  sequence alcastreamHcalMinbias = {MinProd}
+  path alcastreamHcalMinbias = {MinProd}

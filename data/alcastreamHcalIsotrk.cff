@@ -4,4 +4,5 @@
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcaisotrk.cfi"
 
-  sequence alcastreamHcalIsotrk = {IsoProd}
+#  sequence alcastreamHcalIsotrk = {IsoProd}  
+  path alcastreamHcalIsotrk = {IsoProd}

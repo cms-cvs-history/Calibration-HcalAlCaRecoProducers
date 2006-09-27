@@ -4,5 +4,5 @@
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcadijets.cfi"
 
-#  sequence alcastreamHcalDijets = {DiJProd}
-  path alcastreamHcalDijets = {DiJProd}
+  sequence seqAlcastreamHcalDijets = {DiJProd}
+#  path alcastreamHcalDijets = {DiJProd}

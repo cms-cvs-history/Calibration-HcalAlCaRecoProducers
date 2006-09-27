@@ -8,7 +8,8 @@
     {
       "drop *",
       "keep recoTracks_DiJProd_*_*",
-      "keep recoTrackExtras_*_*_*",
+#      "keep recoTrackExtras_*_*_*",
+      "keep recoTrackExtras_ctfWithMaterialTracks_*_*",
       "keep recoCaloJets_DiJProd_*_*",
       "keep CaloTowersSorted_*_*_*"
     }

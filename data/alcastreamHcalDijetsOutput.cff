@@ -8,10 +8,13 @@
     {
       "drop *",
       "keep recoTracks_DiJProd_*_*",
-#      "keep recoTrackExtras_*_*_*",
+      "keep recoTrackExtras_*_*_*",
       "keep recoTrackExtras_ctfWithMaterialTracks_*_*",
       "keep recoCaloJets_DiJProd_*_*",
       "keep CaloTowersSorted_*_*_*"
+      "keep HBHERecHitsSorted_DiJProd_*_*",
+      "keep HORecHitsSorted_DiJProd_*_*",
+      "keep HFRecHitsSorted_DiJProd_*_*"
     }
 
 # use this in case of filter

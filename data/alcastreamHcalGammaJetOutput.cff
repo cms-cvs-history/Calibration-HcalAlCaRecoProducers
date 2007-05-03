@@ -1,0 +1,12 @@
+# output block for alcastream HCAL Dijets
+
+  # output module 
+#  module alcastreamHcalGammaJetOutput = PoolOutputModule
+  block alcastreamHcalGammaJetOutput =
+   {
+    untracked vstring outputCommands =
+    {
+      "drop *",
+      "keep *_GammaJetProd_*_*"
+    }
+  } 

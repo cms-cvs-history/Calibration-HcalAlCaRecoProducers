@@ -1,0 +1,12 @@
+# output block for alcastream HCAL Dijets
+
+  # output module 
+#  module alcastreamHcalDijetsOutput = PoolOutputModule
+  block OutALCARECOHcalCalDijets =
+   {
+    untracked vstring outputCommands =
+    {
+      "drop *",
+      "keep *_DiJProd_*_*"
+    }
+  } 

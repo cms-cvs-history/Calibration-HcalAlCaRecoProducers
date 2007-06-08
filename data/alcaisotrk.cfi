@@ -2,4 +2,5 @@
 
   module IsoProd = AlCaIsoTracksProducer {
     untracked string inputTrackLabel = 'ctfWithMaterialTracks'
+    InputTag hoInput = horeco
 }

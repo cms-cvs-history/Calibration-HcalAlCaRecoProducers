@@ -2,5 +2,10 @@
 
   module IsoProd = AlCaIsoTracksProducer {
     untracked string inputTrackLabel = 'ctfWithMaterialTracks'
+    include "TrackingTools/TrackAssociator/data/default.cfi"
     InputTag hoInput = horeco
+    InputTag hbheInput = hbhereco
+    untracked int32 histoFlag = 0
+    VInputTag ecalInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
+
 }

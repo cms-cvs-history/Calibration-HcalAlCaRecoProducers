@@ -1,0 +1,14 @@
+# AlCaReco for HO using ZMuMu events
+
+  block OutALCARECOHcalCalZMuMu = {
+    untracked vstring outputCommands = { 
+                "drop *" ,
+		"keep *_ALCARECOMuAlZMuMu_*_*",
+                "keep *_horeco_*_*"
+    }
+    untracked PSet SelectEvents = {
+      vstring SelectEvents = { "pathALCARECOMuAlZMuMu" }
+    }
+
+  }
+

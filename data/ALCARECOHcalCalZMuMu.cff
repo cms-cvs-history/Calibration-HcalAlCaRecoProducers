@@ -1,0 +1,7 @@
+
+  #------------------------------------------------
+  #AlCaReco filtering for HCAL Zmuu for HO:
+  #------------------------------------------------
+  include "Calibration/HcalAlCaRecoProducers/data/alcazmumu.cfi"
+
+  sequence seqALCARECOHcalCalZMuMu = {ALCARECOHcalCalZMuMu}  

@@ -1,11 +1,8 @@
 # producer for alcadijets (HCAL di-jets)
 
   module DiJProd = AlCaDiJetsProducer {
-                untracked string inputTrackLabel = 'ctfWithMaterialTracks'
-                InputTag hbheInput = hbhereco
-                InputTag hoInput = horeco
-                InputTag hfInput = hfreco
-#                VInputTag srcCalo = {iterativeCone5CaloJets, midPointCone5CaloJets, midPointCone7CaloJets,ktCaloJets}
-                VInputTag srcCalo = {iterativeCone7CaloJets}
-                VInputTag ecalInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
-  }
+    string src = 'iterativeCone5CaloJets'
+//    string src = 'ktCaloJets'
+//    string src = 'midPointCone5CaloJets'
+//    string src = 'midPointCone7CaloJets'
+}

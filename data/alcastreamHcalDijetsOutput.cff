@@ -7,6 +7,18 @@
     untracked vstring outputCommands =
     {
       "drop *",
-      "keep *_DiJProd_*_*"
+      "keep recoTracks_DiJProd_*_*",
+#      "keep recoTrackExtras_*_*_*",
+      "keep recoTrackExtras_ctfWithMaterialTracks_*_*",
+      "keep recoCaloJets_DiJProd_*_*",
+      "keep CaloTowersSorted_*_*_*"
     }
+
+# use this in case of filter
+#    untracked PSet SelectEvents = {
+#      vstring SelectEvents = { "alcastreamHcalDijets" }
+#    }
+
   } 
+
+ 

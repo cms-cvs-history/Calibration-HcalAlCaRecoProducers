@@ -25,7 +25,7 @@
 
 #include "Geometry/Records/interface/IdealGeometryRecord.h"
 #include "Geometry/CaloGeometry/interface/CaloGeometry.h"
-#include "DataFormats/GeometryVector/interface/GlobalPoint.h"
+#include "Geometry/Vector/interface/GlobalPoint.h"
 #include "DataFormats/CaloTowers/interface/CaloTowerDetId.h"
 #include "DataFormats/HcalRecHit/interface/HcalRecHitCollections.h"
 #include "DataFormats/EcalRecHit/interface/EcalRecHitCollections.h"
@@ -44,8 +44,6 @@ class AlCaEcalHcalReadoutsProducer : public edm::EDProducer {
    private:
       // ----------member data ---------------------------
 
- edm::InputTag hbheLabel_;
- edm::InputTag hoLabel_;
- edm::InputTag hfLabel_;
- 
+// edm::InputTag EcalHcalReadoutsProducer_;
+// std::string hbheLabel_,hoLabel_,hfLabel_;
 };

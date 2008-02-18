@@ -1,0 +1,7 @@
+
+module gammajetHLT= HLTHighLevel {
+     InputTag TriggerResultsTag = TriggerResults::HLT
+#     bool byName = true
+     bool andOr= true
+     vstring HLTPaths ={ "HLT1Photon", "CandHLT1PhotonL1Isolated"}
+}

@@ -1,0 +1,12 @@
+#------------------------------------------------------
+# Output block for HOCalibProducer
+#-------------------------------------------------------
+     block OutHOCalibProducer = 
+     {
+	untracked vstring outputCommands =
+        {
+         "drop *",
+	 "keep HOCalibVariabless_*_*_*" 
+        }
+      }
+

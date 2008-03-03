@@ -7,5 +7,5 @@
     InputTag hbheInput = hbhereco
     untracked int32 histoFlag = 0
     VInputTag ecalInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
-
+    untracked double coneCut = 50.
 }

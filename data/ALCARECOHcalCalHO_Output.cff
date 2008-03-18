@@ -8,5 +8,8 @@
          "drop *",
 	 "keep HOCalibVariabless_*_*_*" 
         }
+    untracked PSet SelectEvents = {
+      vstring SelectEvents = { "pathALCARECOHcalCalHO" }
+    }
       }
 

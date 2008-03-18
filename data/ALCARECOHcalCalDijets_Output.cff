@@ -9,4 +9,8 @@
       "drop *",
       "keep *_DiJProd_*_*"
     }
+# use this in case of filter available
+    untracked PSet SelectEvents = {
+      vstring SelectEvents = { "pathALCARECOHcalCalDijets" }
+    }
   } 

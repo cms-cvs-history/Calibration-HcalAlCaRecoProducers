@@ -3,5 +3,7 @@
   #AlCaReco filtering for HCAL Zmuu for HO:
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcazmumu.cfi"
+  include "Calibration/HcalAlCaRecoProducers/data/isoMuonHLT.cfi"
 
-  sequence seqALCARECOHcalCalZMuMu = {ALCARECOHcalCalZMuMu}  
+  sequence seqALCARECOHcalCalZMuMu = {ALCARECOHcalCalZMuMu}
+  path pathALCARECOHcalCalZMuMu  = {isoMuonHLT,seqALCARECOHcalCalZMuMu}

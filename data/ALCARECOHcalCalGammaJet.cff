@@ -3,5 +3,7 @@
   #AlCaReco filtering for HCAL gammajet:
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcagammajet.cfi"
+  include "Calibration/HcalAlCaRecoProducers/data/gammajetHLT.cfi"
 
   sequence seqALCARECOHcalCalGammaJet = {GammaJetProd}
+  path pathALCARECOHcalCalGammaJet = {gammajetHLT, seqALCARECOHcalCalGammaJet} 

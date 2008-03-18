@@ -1,8 +1,9 @@
 
   #------------------------------------------------
-  #AlCaReco filtering for HCAL minbias:
+  #AlCaReco filtering for HCAL HO:
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcahomuon.cfi"
+  include "Calibration/HcalAlCaRecoProducers/data/isoMuonHLT.cfi"
 
-  sequence seqALCARECOHcalCalDijets = {hoCalibProducer}
-#  path alcastreamHcalDijets = {DiJProd}
+  sequence seqALCARECOHcalCalHO = {hoCalibProducer}
+  path pathALCARECOHcalCalHO = {isoMuonHLT,seqALCARECOHcalCalHO}

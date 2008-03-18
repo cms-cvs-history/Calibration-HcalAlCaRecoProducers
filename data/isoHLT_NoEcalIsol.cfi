@@ -1,7 +1,6 @@
-
 module isoHLT= HLTHighLevel {
      InputTag TriggerResultsTag = TriggerResults::HLT
      bool byName = true
      bool andOr= true
-     vstring HLTPaths ={ "HLTHcalIsolatedTrackNoEcalIsol" }
+     vstring HLTPaths ={ "CandHLTHcalIsolatedTrackNoEcalIsol" }
 }

@@ -5,5 +5,4 @@
   include "Calibration/HcalAlCaRecoProducers/data/alcaisotrk.cfi"
   include "Calibration/HcalAlCaRecoProducers/data/isoHLT.cfi"
 
-  sequence seqALCARECOHcalCalIsoTrk = {IsoProd}  
-  path pathALCARECOHcalCalIsoTrk = {isoHLT,seqALCARECOHcalCalIsoTrk}
+  sequence seqALCARECOHcalCalIsoTrk = {isoHLT,IsoProd}  

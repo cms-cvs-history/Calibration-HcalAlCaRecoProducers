@@ -5,5 +5,4 @@
   include "Calibration/HcalAlCaRecoProducers/data/alcagammajet.cfi"
   include "Calibration/HcalAlCaRecoProducers/data/gammajetHLT.cfi"
 
-  sequence seqALCARECOHcalCalGammaJet = {GammaJetProd}
-  path pathALCARECOHcalCalGammaJet = {gammajetHLT, seqALCARECOHcalCalGammaJet} 
+  sequence seqALCARECOHcalCalGammaJet = {gammajetHLT,GammaJetProd}

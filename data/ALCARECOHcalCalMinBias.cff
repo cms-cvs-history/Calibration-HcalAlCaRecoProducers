@@ -4,5 +4,4 @@
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcaminbias.cfi"
   include "Calibration/HcalAlCaRecoProducers/data/hcalminbiasHLT.cfi"
-  sequence seqALCARECOHcalCalMinBias = {MinProd}
-  path pathALCARECOHcalCalMinBias = {hcalminbiasHLT,seqALCARECOHcalCalMinBias}
+  sequence seqALCARECOHcalCalMinBias = {hcalminbiasHLT,MinProd}

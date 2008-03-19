@@ -1,7 +1,7 @@
 # producer for alcadijets (HCAL gamma-jet)
 
   module GammaJetProd = AlCaGammaJetProducer {
-                untracked string inputTrackLabel = 'generalTracks'
+                untracked string inputTrackLabel = 'ctfWithMaterialTracks'
                 InputTag hbheInput = hbhereco
                 InputTag hoInput = horeco
                 InputTag hfInput = hfreco

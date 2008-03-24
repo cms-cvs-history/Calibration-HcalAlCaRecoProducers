@@ -7,8 +7,8 @@
 #        untracked string PedestalFile = "/afs/cern.ch/user/m/majumder/scratch0/anal/CMSSW_1_6_4/src/Calibration/HcalAlCaRecoProducers/test/peds_mtcc2_4333.log"
         untracked string PedestalFile = "peds_mtcc2_4333.log"
         untracked string RootFileName = "test.root"
-        untracked InputTag muons =cosmicMuons # standAloneMuons
-#        untracked InputTag muons = standAloneMuons
+#        untracked InputTag muons =cosmicMuons # standAloneMuons
+        untracked InputTag muons = standAloneMuons
 
 	untracked bool   digiInput = false
 	untracked bool   debug = false

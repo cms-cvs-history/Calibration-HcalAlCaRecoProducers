@@ -1,7 +1,7 @@
 #------------------------------------------------------
 # Output block for HOCalibProducer
 #-------------------------------------------------------
-     block OutHOCalibProducer = 
+     block OutALCARECOHcalCalHO =
      {
 	untracked vstring outputCommands =
         {

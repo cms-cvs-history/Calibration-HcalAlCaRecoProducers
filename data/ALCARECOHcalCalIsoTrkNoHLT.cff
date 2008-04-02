@@ -4,4 +4,4 @@
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcaisotrk.cfi"
 
-  sequence seqALCARECOHcalCalIsoTrk = {IsoProd}  
+  sequence seqALCARECOHcalCalIsoTrkNoHLT = {IsoProd}  

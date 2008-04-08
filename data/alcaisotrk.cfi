@@ -1,8 +1,9 @@
 # producer for alcaisotrk (HCAL isolated tracks)
+include "TrackingTools/TrackAssociator/data/default.cfi"
 
   module IsoProd = AlCaIsoTracksProducer {
     untracked string inputTrackLabel = 'generalTracks'
-    include "TrackingTools/TrackAssociator/data/default.cfi"
+    using TrackAssociatorParameterBlock
     InputTag hoInput = horeco
     InputTag hbheInput = hbhereco
     untracked int32 histoFlag = 0

@@ -9,7 +9,8 @@
         untracked string RootFileName = "test.root"
 #        untracked InputTag muons =cosmicMuons # standAloneMuons
         untracked InputTag muons = standAloneMuons
-
+        InputTag hbheInput = hbhereco
+        InputTag hoInput = horeco
 	untracked bool   digiInput = false
 	untracked bool   debug = false
         untracked bool   hotime = false	

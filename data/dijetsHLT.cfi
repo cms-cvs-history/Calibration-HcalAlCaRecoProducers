@@ -3,5 +3,5 @@ module dijetsHLT= HLTHighLevel {
      InputTag TriggerResultsTag = TriggerResults::HLT
 #     bool byName = true
      bool andOr= true
-     vstring HLTPaths ={ "HLT2jetAve30", "HLT2jetAve60"}
+     vstring HLTPaths ={ "HLT2jetAve30", "HLT2jetAve50"}
 }

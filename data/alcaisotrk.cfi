@@ -7,5 +7,7 @@ include "TrackingTools/TrackAssociator/data/default.cfi"
     InputTag hoInput = horeco
     InputTag hbheInput = hbhereco
     untracked int32 histoFlag = 0
+    untracked double pCut = 2.
+    untracked double ptCut = 1.5
     VInputTag ecalInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
 }

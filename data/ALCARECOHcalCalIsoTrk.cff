@@ -4,5 +4,6 @@
   #------------------------------------------------
   include "Calibration/HcalAlCaRecoProducers/data/alcaisotrk.cfi"
   include "Calibration/HcalAlCaRecoProducers/data/isoHLT.cfi"
-
+  replace IsoProd.pCut = 5.
+  replace IsoProd.ptCut = 5.
   sequence seqALCARECOHcalCalIsoTrk = {isoHLT,IsoProd}  

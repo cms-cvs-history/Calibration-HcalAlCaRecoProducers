@@ -6,6 +6,6 @@
                 InputTag hoInput = horeco
                 InputTag hfInput = hfreco
 #                VInputTag srcCalo = {iterativeCone5CaloJets, midPointCone5CaloJets, midPointCone7CaloJets,ktCaloJets}
-                VInputTag srcCalo = {iterativeCone5CaloJets}
+                VInputTag srcCalo = {iterativeCone7CaloJets}
                 VInputTag ecalInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
   }

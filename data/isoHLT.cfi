@@ -3,5 +3,5 @@ module isoHLT= HLTHighLevel {
      InputTag TriggerResultsTag = TriggerResults::HLT
      bool byName = true
      bool andOr= true
-     vstring HLTPaths ={ "AlCaIsoTrack" }
+     vstring HLTPaths ={ "AlCa_IsoTrack" }
 }

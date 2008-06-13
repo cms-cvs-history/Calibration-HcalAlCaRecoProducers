@@ -2,6 +2,6 @@ module hcalminbiasHLT= HLTHighLevel {
      InputTag TriggerResultsTag = TriggerResults::HLT
      bool byName = true
      bool andOr= true
-     vstring HLTPaths ={ "AlCaHcalPhiSym" }
-#     vstring HLTPaths ={ "HLTMinBias" }
+     vstring HLTPaths ={ "AlCa_HcalPhiSym" }
+#     vstring HLTPaths ={ "HLT_MinBias" }
 }

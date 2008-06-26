@@ -3,5 +3,4 @@ module hcalminbiasHLT= HLTHighLevel {
      bool byName = true
      bool andOr= true
      vstring HLTPaths ={ "AlCa_HcalPhiSym" }
-#     vstring HLTPaths ={ "HLT_MinBias" }
 }

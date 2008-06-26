@@ -2,7 +2,7 @@
 
 
   module MinProd = AlCaEcalHcalReadoutsProducer {
-                InputTag hbheInput = hbhereco
-                InputTag hoInput = horeco
-                InputTag hfInput = hfreco  
+                InputTag hbheInput = hbherecoMB
+                InputTag hoInput = horecoMB
+                InputTag hfInput = hfrecoMB 
   }

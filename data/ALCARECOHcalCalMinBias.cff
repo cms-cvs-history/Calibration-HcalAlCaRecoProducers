@@ -2,6 +2,42 @@
   #------------------------------------------------
   #AlCaReco filtering for HCAL minbias:
   #------------------------------------------------
-  include "Calibration/HcalAlCaRecoProducers/data/alcaminbias.cfi"
+  module hcalDigiAlCaMB = hcalDigis from "EventFilter/HcalRawToDigi/data/HcalRawToDigi.cfi"
+  replace hcalDigiAlCaMB.firstSample=0
+  replace hcalDigiAlCaMB.lastSample=9
+  replace hcalDigiAlCaMB.InputLabel=hcalFED
+
+  module hbherecoNoise = hbhereco from "RecoLocalCalo/HcalRecProducers/data/HcalSimpleReconstructor-hbhe.cfi"  
+  replace hbherecoNoise.firstSample=0
+  replace hbherecoNoise.samplesToAdd=4
+  replace hbherecoNoise.digiLabel=hcalDigiAlCaMB
+
+  module hbherecoMB = hbhereco from "RecoLocalCalo/HcalRecProducers/data/HcalSimpleReconstructor-hbhe.cfi"
+  replace hbherecoMB.firstSample=4
+  replace hbherecoMB.samplesToAdd=4
+  replace hbherecoMB.digiLabel=hcalDigiAlCaMB
+
+  module hfrecoNoise = hfreco from "RecoLocalCalo/HcalRecProducers/data/HcalSimpleReconstructor-hf.cfi"
+  replace hfrecoNoise.firstSample=7
+  replace hfrecoNoise.samplesToAdd=1
+  replace hfrecoNoise.digiLabel=hcalDigiAlCaMB
+
+  module hfrecoMB = hfreco from "RecoLocalCalo/HcalRecProducers/data/HcalSimpleReconstructor-hf.cfi"
+  replace hfrecoMB.firstSample=3
+  replace hfrecoMB.samplesToAdd=1
+  replace hfrecoMB.digiLabel=hcalDigiAlCaMB
+
+  module horecoNoise = horeco from "RecoLocalCalo/HcalRecProducers/data/HcalSimpleReconstructor-ho.cfi"
+  replace horecoNoise.firstSample=0
+  replace horecoNoise.samplesToAdd=4
+  replace horecoNoise.digiLabel=hcalDigiAlCaMB
+
+  module horecoMB = horeco from "RecoLocalCalo/HcalRecProducers/data/HcalSimpleReconstructor-ho.cfi"
+  replace horecoMB.firstSample=4
+  replace horecoMB.samplesToAdd=4
+  replace horecoMB.digiLabel=hcalDigiAlCaMB
+
   include "Calibration/HcalAlCaRecoProducers/data/hcalminbiasHLT.cfi"
-  sequence seqALCARECOHcalCalMinBias = {hcalminbiasHLT,MinProd}
+
+  sequence seqALCARECOHcalCalMinBias = {hcalminbiasHLT, hcalDigiAlCaMB, hbherecoNoise, hbherecoMB, hfrecoNoise, hfrecoMB, horecoNoise, horecoMB}
+

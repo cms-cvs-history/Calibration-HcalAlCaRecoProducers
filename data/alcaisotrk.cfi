@@ -1,5 +1,9 @@
 # producer for alcaisotrk (HCAL isolated tracks)
 
+include "TrackingTools/TrackAssociator/data/default.cfi"
+include "TrackingTools/TrackAssociator/data/DetIdAssociatorESProducer.cff"
+
+
   module IsoProd = AlCaIsoTracksProducer {
     InputTag InputTracksLabel = generalTracks
     VInputTag ECALInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
@@ -19,6 +23,4 @@
     double ECALClusterRadius = 9
     double ECALOuterRingRadius = 18 
     #########
-
-    include "TrackingTools/TrackAssociator/data/default.cfi"
 }

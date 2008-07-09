@@ -5,6 +5,8 @@ include "TrackingTools/TrackAssociator/data/DetIdAssociatorESProducer.cff"
 
 
   module IsoProd = AlCaIsoTracksProducer {
+    using TrackAssociatorParameterBlock
+
     InputTag InputTracksLabel = generalTracks
     VInputTag ECALInputs = {ecalRecHit:EcalRecHitsEB, ecalRecHit:EcalRecHitsEE }
     InputTag HOInput = horeco

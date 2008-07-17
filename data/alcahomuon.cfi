@@ -10,6 +10,10 @@
         untracked InputTag muons = standAloneMuons
         InputTag hbheInput = hbhereco
         InputTag hoInput = horeco
+        InputTag hltInput = TriggerResults
+        InputTag l1Input = l1extraParticleMap
+        InputTag towerInput = towerMaker
+
 	untracked bool   digiInput = false
 	untracked bool   debug = false
         untracked bool   hotime = false	
@@ -18,6 +22,8 @@
                untracked int32 lastTS = 8
                untracked double m_scale = 4.0
                untracked double sigma = 1.0	
+
+
 	}
 
 

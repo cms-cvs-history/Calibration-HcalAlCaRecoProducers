@@ -3,5 +3,5 @@ module gammajetHLT= HLTHighLevel {
      InputTag TriggerResultsTag = TriggerResults::HLT
 #     bool byName = true
      bool andOr= true
-     vstring HLTPaths ={ "HLT_IsoPhoton30_L1I", "HLT_IsoPhoton12_L1I"}
+     vstring HLTPaths ={ "HLT_IsoPhoton30_L1I", "HLT_IsoPhoton15_L1R"}
 }

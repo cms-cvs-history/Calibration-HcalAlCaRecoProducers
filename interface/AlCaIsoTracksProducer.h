@@ -71,7 +71,6 @@ private:
   
   double m_dvCut;
   double m_ddirCut;
-  bool useConeCorr_;
   double m_pCut;
   double m_ptCut;
   double m_ecalCut;
@@ -87,8 +86,7 @@ private:
   double isolE_;
   double etaMax_;
   double cluRad_;
-  double ringOutRad_;
-  double ringInnRad_;
+  double ringRad_;
 
 };
 

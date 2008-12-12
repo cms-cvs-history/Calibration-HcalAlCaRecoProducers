@@ -1,8 +1,0 @@
-
-  #------------------------------------------------
-  #AlCaReco filtering for HCAL minbias:
-  #------------------------------------------------
-  include "Calibration/HcalAlCaRecoProducers/data/alcadijets.cfi"
-  include "Calibration/HcalAlCaRecoProducers/data/dijetsHLT.cfi"
-  
-  sequence seqALCARECOHcalCalDijets = {dijetsHLT,DiJProd}

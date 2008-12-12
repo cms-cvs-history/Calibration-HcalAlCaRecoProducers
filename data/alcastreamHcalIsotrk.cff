@@ -1,8 +1,0 @@
-
-  #------------------------------------------------
-  #AlCaReco filtering for HCAL isotrk:
-  #------------------------------------------------
-  include "Calibration/HcalAlCaRecoProducers/data/alcaisotrk.cfi"
-
-  sequence seqAlcastreamHcalIsotrk = {IsoProd}  
-#  path alcastreamHcalIsotrk = {IsoProd}

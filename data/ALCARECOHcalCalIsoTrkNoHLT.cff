@@ -1,8 +1,0 @@
-
-  #------------------------------------------------
-  #AlCaReco filtering for HCAL isotrk:
-  #------------------------------------------------
-  include "Calibration/HcalAlCaRecoProducers/data/alcaisotrk.cfi"
-  replace IsoProd.pCut = 5.
-  replace IsoProd.ptCut = 5.
-  sequence seqALCARECOHcalCalIsoTrkNoHLT = {IsoProd}  

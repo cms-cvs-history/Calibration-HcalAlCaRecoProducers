@@ -1,7 +1,0 @@
-
-  #------------------------------------------------
-  #AlCaReco filtering for HCAL gammajet:
-  #------------------------------------------------
-  include "Calibration/HcalAlCaRecoProducers/data/alcagammajet.cfi"
-
-  sequence seqAlcastreamHcalGammaJet = {GammaJetProd}

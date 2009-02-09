@@ -1,8 +1,0 @@
-
-  #------------------------------------------------
-  #AlCaReco filtering for HCAL HO:
-  #------------------------------------------------
-  include "Calibration/HcalAlCaRecoProducers/data/alcahomuon.cfi"
-  include "Calibration/HcalAlCaRecoProducers/data/isoMuonHLT.cfi"
-
-  sequence seqALCARECOHcalCalHO = {isoMuonHLT,hoCalibProducer}

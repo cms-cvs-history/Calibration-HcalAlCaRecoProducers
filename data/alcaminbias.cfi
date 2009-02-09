@@ -1,8 +1,0 @@
-# producer for alcaminbisas (HCAL minimum bias)
-
-
-  module MinProd = AlCaEcalHcalReadoutsProducer {
-                InputTag hbheInput = hbherecoMB
-                InputTag hoInput = horecoMB
-                InputTag hfInput = hfrecoMB 
-  }
